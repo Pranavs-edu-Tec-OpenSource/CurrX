@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>CurrX - Live Currency Exchange Rates</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="load.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+    <body>
+    				<div class="bar bar--bg">
+								<div class="bar__content u-centered">
+												<h5 class="call-to-action__discription">
+																<span id="head_arc"><img src="img/banner-iimg.png" width="52px" alt="CurrX Logo" class="tit_ico"><strong id="tpr">Curr<strong id="tps">X</strong></strong>
+																</span>
+																</h5>
+												<input type="checkbox" id="inpNavToggle">
+												<label for="inpNavToggle" class="bar__nav-toggle">
+																<i class="material-icons">menu</i>
+												</label>
+												<nav class="nav">
+																<a class="nav__link" href="https://pranavswebportal.ml">Pranav's Web Portal</a>
+																<a class="nav__link" href="https://weatheral.ml">Weatheral - Live Weather WebApp</a>
+																<a class="nav__link" href="">Help & Feedback</a>
+																
+																
+																
+												</nav>
+								</div>
+				</div>
+				<section>
+								<div id="center_box">
+								<article id="top_intro">
+												<div id="top_name">
+																<strong id="logo_main">Curr<strong id="logo_sec">X</strong></strong>
+												</div>
+												
+								</article>
+								</div>
+        <form>
+        			
+        								<fieldset>
+        												
+        												<legend>Choose Currency</legend>
+        												<div id="fieldset">
+        												<div id="box_one">
+        												<div class="select_box">
+        												<label>Base Currency</label>
+            <select id="base_cur">
+            				<option value="usd">USD</option>
+            				<option value="cad">CAD</option>
+            				<option value="hkd">HKD</option>
+            				<option value="isk">ISK</option>
+            				<option value="php">PHP</option>
+            				<option value="dkk">DKK</option>
+            				<option value="huf">HUF</option>
+            				<option value="czk">CZK</option>
+            				<option value="gbp">GBP</option>
+            				<option value="ron">RON</option>
+            				<option value="sek">SEK</option>
+            				<option value="idr">IRD</option>
+            				<option value="inr">INR</option>
+            				<option value="brl">BRL</option>
+            				<option value="rub">RUB</option>
+            				<option value="hrk">HRK</option>
+            				<option value="jpy">JPY</option>
+            				<option value="thb">THB</option>
+            				<option value="chf">CHF</option>
+            				<option value="eur">EUR</option>
+            				<option value="myr">MYR</option>
+            				<option value="bgn">BGN</option>
+            				<option value="try">TRY</option>
+            				<option value="cny">CNY</option>
+            				<option value="nok">NOK</option>
+            				<option value="nzd">NZD</option>
+            				<option value="zar">ZAR</option>
+            				<option value="mxn">MXN</option>
+            				<option value="sgd">SGD</option>
+            				<option value="aud">AUD</option>
+            				<option value="ils">ILS</option>
+            				<option value="krw">KRW</option>
+            				<option value="pln">PLN</option>
+            </select>
+            </div>
+            <br>
+            <div class="select_box">
+            <label>Conversion Currency</label>
+            <select id="currency">
+            				<option value="usd">USD</option>
+            				<option value="cad">CAD</option>
+            				<option value="hkd">HKD</option>
+            				<option value="isk">ISK</option>
+            				<option value="php">PHP</option>
+            				<option value="dkk">DKK</option>
+            				<option value="huf">HUF</option>
+            				<option value="czk">CZK</option>
+            				<option value="gbp">GBP</option>
+            				<option value="ron">RON</option>
+            				<option value="sek">SEK</option>
+            				<option value="idr">IRD</option>
+            				<option value="inr">INR</option>
+            				<option value="brl">BRL</option>
+            				<option value="rub">RUB</option>
+            				<option value="hrk">HRK</option>
+            				<option value="jpy">JPY</option>
+            				<option value="thb">THB</option>
+            				<option value="chf">CHF</option>
+            				<option value="eur">EUR</option>
+            				<option value="myr">MYR</option>
+            				<option value="bgn">BGN</option>
+            				<option value="try">TRY</option>
+            				<option value="cny">CNY</option>
+            				<option value="nok">NOK</option>
+            				<option value="nzd">NZD</option>
+            				<option value="zar">ZAR</option>
+            				<option value="mxn">MXN</option>
+            				<option value="sgd">SGD</option>
+            				<option value="aud">AUD</option>
+            				<option value="ils">ILS</option>
+            				<option value="krw">KRW</option>
+            				<option value="pln">PLN</option>
+            </select>
+            </div>
+            <br>
+            <button><input type="image" src="img/arrow_swap.png" id="submit"></button>
+            </div>
+            
+            <hr id="hr">
+            <br id="br">
+            <div id="result">
+            </div>
+            </div>
+            </fieldset>
+        </form>
+        </section>
+        <footer class="footer_weatheral">
+        				<center>
+        				<p class="copyright">Pranav's edu Tec &copy</p>
+        				<br>
+        				<hr class="hr">
+        				<br>
+        				<div class="credits">
+        								<p class="Credits_hed">Powered By</p>
+        								
+        								&
+        								<p class="Credits_hed">In Partnership With</p><br><br>
+        								<a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"><img src="img/logo_only.svg" alt="European Central Bank" class="support_img"></a><br><b>European Central Bank</b><br><br><br>
+        								
+        								<a href="https://github.com"><img src="img/github.png" alt="GitHub" class="support_img"></a><br><b>GitHub</b>
+        								<br><br><br>
+        								<br>
+        								
+        								<br>
+        				</div>
+        				<hr class="hr">
+        				<div class="footer_element">
+        								<a href="" class="footer_element_text">Help & Support</a>
+        								<br>
+        								<a href="" class="footer_element_text">Feedback</a>
+        								<br>
+        								<a href="" class="footer_element_text">Disclaimer</a>
+        				</div>
+        				<div class="footer_contact">
+        								
+        				</div>
+        				</center>
+        </footer>
+    </body>
+</html>
