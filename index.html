@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+				<meta charset="UTF-8" />
+    <meta name="theme-color" content="#9142ff" />			
+<meta name="msapplication-navbutton-color" content="#9142ff" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>CurrX - Live Currency Exchange Rates</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="load.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon-32x32.png">
@@ -49,78 +56,78 @@
         												<div class="select_box">
         												<label>Base Currency</label>
             <select id="base_cur">
-            				<option value="usd">USD</option>
-            				<option value="cad">CAD</option>
-            				<option value="hkd">HKD</option>
-            				<option value="isk">ISK</option>
-            				<option value="php">PHP</option>
-            				<option value="dkk">DKK</option>
-            				<option value="huf">HUF</option>
-            				<option value="czk">CZK</option>
-            				<option value="gbp">GBP</option>
-            				<option value="ron">RON</option>
-            				<option value="sek">SEK</option>
-            				<option value="idr">IRD</option>
-            				<option value="inr">INR</option>
-            				<option value="brl">BRL</option>
-            				<option value="rub">RUB</option>
-            				<option value="hrk">HRK</option>
-            				<option value="jpy">JPY</option>
-            				<option value="thb">THB</option>
-            				<option value="chf">CHF</option>
-            				<option value="eur">EUR</option>
-            				<option value="myr">MYR</option>
-            				<option value="bgn">BGN</option>
-            				<option value="try">TRY</option>
-            				<option value="cny">CNY</option>
-            				<option value="nok">NOK</option>
-            				<option value="nzd">NZD</option>
-            				<option value="zar">ZAR</option>
-            				<option value="mxn">MXN</option>
-            				<option value="sgd">SGD</option>
-            				<option value="aud">AUD</option>
-            				<option value="ils">ILS</option>
-            				<option value="krw">KRW</option>
-            				<option value="pln">PLN</option>
+            				<option value="usd">US Dollar (USD)</option>
+            				<option value="cad">Canadian Dollar (CAD)</option>
+            				<option value="hkd">Hong Kong Dollar (HKD)</option>
+            				<option value="isk">Icelandic Krona (ISK)</option>
+            				<option value="php">Philippine Peso (PHP)</option>
+            				<option value="dkk">Danish Krone (DKK)</option>
+            				<option value="huf">Hungarian Forint (HUF)</option>
+            				<option value="czk">Czech Koruna (CZK)</option>
+            				<option value="gbp">Pound Sterling (GBP)</option>
+            				<option value="ron">Romanian Leu (RON)</option>
+            				<option value="sek">Swedish Krona (SEK)</option>
+            				<option value="idr">Indonesian Rupiah (IDR)</option>
+            				<option value="inr">Indian Rupee (INR)</option>
+            				<option value="brl">Brazilian Real (BRL)</option>
+            				<option value="rub">Russian Rouble (RUB)</option>
+            				<option value="hrk">Croatian Kuna (HRK)</option>
+            				<option value="jpy">Japanese Yen (JPY)</option>
+            				<option value="thb">Thai Baht (THB)</option>
+            				<option value="chf">Swiss Franc (CHF)</option>
+            				<option value="eur">European Euro (EUR)</option>
+            				<option value="myr">Malaysian Ringgit (MYR)</option>
+            				<option value="bgn">Bulgarian Lev (BGN)</option>
+            				<option value="try">Turkish Lira (TRY)</option>
+            				<option value="cny">Chinese Yuan Renminbi (CNY)</option>
+            				<option value="nok">Norwegian Krone (NOK)</option>
+            				<option value="nzd">New Zealand Dollar (NZD)</option>
+            				<option value="zar">South African Rand (ZAR)</option>
+            				<option value="mxn">Maxican Peso (MXN)</option>
+            				<option value="sgd">Singapore Dollar (SGD)</option>
+            				<option value="aud">Australian Dollar (AUD)</option>
+            				<option value="ils">Israeli Shekel (ILS)</option>
+            				<option value="krw">South Korean Won (KRW)</option>
+            				<option value="pln">Polish Zloty (PLN)</option>
             </select>
             </div>
             <br>
             <div class="select_box">
             <label>Conversion Currency</label>
             <select id="currency">
-            				<option value="usd">USD</option>
-            				<option value="cad">CAD</option>
-            				<option value="hkd">HKD</option>
-            				<option value="isk">ISK</option>
-            				<option value="php">PHP</option>
-            				<option value="dkk">DKK</option>
-            				<option value="huf">HUF</option>
-            				<option value="czk">CZK</option>
-            				<option value="gbp">GBP</option>
-            				<option value="ron">RON</option>
-            				<option value="sek">SEK</option>
-            				<option value="idr">IRD</option>
-            				<option value="inr">INR</option>
-            				<option value="brl">BRL</option>
-            				<option value="rub">RUB</option>
-            				<option value="hrk">HRK</option>
-            				<option value="jpy">JPY</option>
-            				<option value="thb">THB</option>
-            				<option value="chf">CHF</option>
-            				<option value="eur">EUR</option>
-            				<option value="myr">MYR</option>
-            				<option value="bgn">BGN</option>
-            				<option value="try">TRY</option>
-            				<option value="cny">CNY</option>
-            				<option value="nok">NOK</option>
-            				<option value="nzd">NZD</option>
-            				<option value="zar">ZAR</option>
-            				<option value="mxn">MXN</option>
-            				<option value="sgd">SGD</option>
-            				<option value="aud">AUD</option>
-            				<option value="ils">ILS</option>
-            				<option value="krw">KRW</option>
-            				<option value="pln">PLN</option>
+            				<option value="usd">US Dollar (USD)</option>
+            				<option value="cad">Canadian Dollar (CAD)</option>
+            				<option value="hkd">Hong Kong Dollar (HKD)</option>
+            				<option value="isk">Icelandic Krona (ISK)</option>
+            				<option value="php">Philippine Peso (PHP)</option>
+            				<option value="dkk">Danish Krone (DKK)</option>
+            				<option value="huf">Hungarian Forint (HUF)</option>
+            				<option value="czk">Czech Koruna (CZK)</option>
+            				<option value="gbp">Pound Sterling (GBP)</option>
+            				<option value="ron">Romanian Leu (RON)</option>
+            				<option value="sek">Swedish Krona (SEK)</option>
+            				<option value="idr">Indonesian Rupiah (IDR)</option>
+            				<option value="inr">Indian Rupee (INR)</option>
+            				<option value="brl">Brazilian Real (BRL)</option>
+            				<option value="rub">Russian Rouble (RUB)</option>
+            				<option value="hrk">Croatian Kuna (HRK)</option>
+            				<option value="jpy">Japanese Yen (JPY)</option>
+            				<option value="thb">Thai Baht (THB)</option>
+            				<option value="chf">Swiss Franc (CHF)</option>
+            				<option value="eur">European Euro (EUR)</option>
+            				<option value="myr">Malaysian Ringgit (MYR)</option>
+            				<option value="bgn">Bulgarian Lev (BGN)</option>
+            				<option value="try">Turkish Lira (TRY)</option>
+            				<option value="cny">Chinese Yuan Renminbi (CNY)</option>
+            				<option value="nok">Norwegian Krone (NOK)</option>
+            				<option value="nzd">New Zealand Dollar (NZD)</option>
+            				<option value="zar">South African Rand (ZAR)</option>
+            				<option value="mxn">Maxican Peso (MXN)</option>
+            				<option value="sgd">Singapore Dollar (SGD)</option>
+            				<option value="aud">Australian Dollar (AUD)</option>
+            				<option value="ils">Israeli Shekel (ILS)</option>
+            				<option value="krw">South Korean Won (KRW)</option>
+            				<option value="pln">Polish Zloty (PLN)</option>
             </select>
             </div>
             <br>
@@ -146,7 +153,7 @@
         								
         								&
         								<p class="Credits_hed">In Partnership With</p><br><br>
-        								<a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"><img src="img/logo_only.svg" alt="European Central Bank" class="support_img"></a><br><b>European Central Bank</b><br><br><br>
+        								<a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"><img src="img/logo_only.svg" alt="European Central Bank" class="support_img whtb"></a><br><b>European Central Bank</b><br><br><br>
         								
         								<a href="https://github.com"><img src="img/github.png" alt="GitHub" class="support_img"></a><br><b>GitHub</b>
         								<br><br><br>
@@ -160,14 +167,14 @@
         								<br>
         								<a href="" class="footer_element_text">Feedback</a>
         								<br>
-        								<a href="" class="footer_element_text">Disclaimer</a>
+        								<a href="https://github.com/Pranavs-edu-Tec-OpenSource/CurrX" class="footer_element_text">Open Source Repository</a>
+        								<br>
+        								<a>v 1.1.0</a>
         				</div>
         				<div class="footer_contact">
         								
         				</div>
         				</center>
         </footer>
-      <script src="script.js"></script>
-      <script src="load.js"></script>
     </body>
 </html>
